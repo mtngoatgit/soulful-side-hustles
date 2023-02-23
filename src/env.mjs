@@ -22,10 +22,10 @@ const server = z.object({
   // Add `.min(1) on ID and SECRET if you want to make sure they're not empty
   DISCORD_CLIENT_ID: z.string(),
   DISCORD_CLIENT_SECRET: z.string(),
-  AWS_REGION: z.string(),
-  AWS_ACCESS_KEY: z.string(),
-  AWS_SECRET_ACCESS_KEY: z.string(),
-  AWS_S3_BUCKET: z.string(),
+  PERHAPS_AWS_REGION: z.string(),
+  PERHAPS_AWS_ACCESS_KEY: z.string(),
+  PERHAPS_AWS_SECRET_ACCESS_KEY: z.string(),
+  PERHAPS_AWS_S3_BUCKET: z.string(),
 });
 
 /**
@@ -50,10 +50,10 @@ const processEnv = {
   DISCORD_CLIENT_ID: process.env.DISCORD_CLIENT_ID,
   DISCORD_CLIENT_SECRET: process.env.DISCORD_CLIENT_SECRET,
   // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
-  AWS_REGION: process.env.AWS_REGION,
-  AWS_ACCESS_KEY: process.env.AWS_ACCESS_KEY,
-  AWS_SECRET_ACCESS_KEY: process.env.AWS_SECRET_ACCESS_KEY,
-  AWS_S3_BUCKET: process.env.AWS_S3_BUCKET,
+  PERHAPS_AWS_REGION: process.env.PERHAPS_AWS_REGION,
+  PERHAPS_AWS_ACCESS_KEY: process.env.PERHAPS_AWS_ACCESS_KEY,
+  PERHAPS_AWS_SECRET_ACCESS_KEY: process.env.PERHAPS_AWS_SECRET_ACCESS_KEY,
+  PERHAPS_AWS_S3_BUCKET: process.env.PERHAPS_AWS_S3_BUCKET,
 };
 
 // Don't touch the part below

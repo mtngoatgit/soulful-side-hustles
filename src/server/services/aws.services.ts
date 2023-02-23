@@ -1,9 +1,9 @@
 import AWS from "aws-sdk";
 
 const config = {
-  accessKeyId: "AWS_ACCESS_KEY_ID",
-  secretAccessKey: "AWS_SECRET_ACCESS_KEY",
-  region: "AWS_REGION",
+  accessKeyId: "PERHAPS_AWS_ACCESS_KEY_ID",
+  secretAccessKey: "PERHAPS_AWS_SECRET_ACCESS_KEY",
+  region: "PERHAPS_AWS_REGION",
 };
 
 
