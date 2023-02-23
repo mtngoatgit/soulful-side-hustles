@@ -1,4 +1,5 @@
 // @ts-check
+// @ts-ignore
 import * as NextMdx from '@next/mdx'
 
 /**
@@ -7,6 +8,7 @@ import * as NextMdx from '@next/mdx'
  */
 !process.env.SKIP_ENV_VALIDATION && (await import("./src/env.mjs"));
 
+// @ts-ignore
 const withMDX = NextMdx.default({
   extension: /\.mdx?$/,
   options: {
