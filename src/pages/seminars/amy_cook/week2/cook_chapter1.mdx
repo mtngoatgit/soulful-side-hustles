@@ -1,3 +1,4 @@
+import { SeminarTemplate } from '../../../../templates/seminar';
 
 [7]
 # CHAPTER 1
@@ -47,4 +48,9 @@ Jung's psychology requires that the ego be strong enough to take on life but als
 1. The goal of individuation for Jung is the Self, and the Self is equivalent in its archetypal image to God. 'The self', wrote Jung, 'is our life's goal, for it is the completest expression of that fateful combination we call individuality' (1928:par.404). The subjective experience of the self and that of God are so similar as to be unable of being distinguished from one another. It is through the psyche that we experience all phenomena, including the divine, thus Jung used the term 'God-Image' to describe that aspect of the psyche that receives the experience of God. Therefore, Jung's understanding of the imitation of Christ perhaps offers the perfect unification of human and divine self, whereby one does seek to be as true to his or her own unique incarnation of the spirit as Christ was to his.
 2. It is important to note that Jung's Self is capitalized so as to distinguish its transcendent qualities from the ordinary sense of self that he identifies as ego. This usage sets the understanding of self as ego and the transcendent Self (that contains and transcends ego) apart, this allows us to clearly denote where Jung is referring to that sense of self that expresses the unity of the personality as a whole . .. a transcendental concept, for it presupposes the existence of unconscious factors on empirical grounds and thus characterises an entity that can be described only in part, but for the other part, remains at present unknowable and illimitable' (1921:par.789).
 
-export default ({ children }) => <div className=" w-full mx-auto my-6 prose">{children}</div>; 
+export default ({ children }) => 
+    <SeminarTemplate>
+        <div className=" w-full mx-auto prose">
+            {children}
+        </div>
+    </SeminarTemplate>; 

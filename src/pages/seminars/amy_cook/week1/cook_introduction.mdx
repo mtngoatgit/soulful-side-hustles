@@ -1,3 +1,5 @@
+import { SeminarTemplate } from '../../../../templates/seminar';
+
 # INTRODUCTION
 
 Soren Kierkegaard is widely acknowledged today as one of the most insightful philosophical and religious thinkers of Western history. Until very recently psychologists have been more interested in him as a subject of analysis, rather than as a psychologist in his own right. Jon Stewart (2011) notes that many scholars, perhaps inspired by Georg Brandes's 1877 famous study of Kierkegaard (Soren Kierkegaard, a literary character),' have treated him not as a psychologist or even a source of inspiration for psychological insight but rather as a case study?. Fortunately, the tide has now turned and Kierkegaard's particular brand of Christian psychology has been documented in dedicated monographs; however, these monographs certainly do possess a particular leaning towards Freudian psychology (see Nordentoft 1978; Ferguson 1995; Cole 1971). It is notable then that whilst Kierkegaard has been exhaustingly investigated from a Freudian perspective, with the exception of a few very brief comparisons by Jungian scholars, it remains that an extensive Jungian-orientated study has yet to be completed.
@@ -24,4 +26,10 @@ Everything in this exposition is carefully interconnected, and consequently this
 3. Dourley, John. 'Jung, Tillich, and Aspects of Western Christianity,' Thought: Fordham University Quarterly, Vol 52, Issue 1, March 1977.
 4. [BLANK]
 
-export default ({ children }) => <div className=" w-full mx-auto my-6 prose">{children}</div>; 
+
+export default ({ children }) => 
+    <SeminarTemplate>
+        <div className=" w-full mx-auto prose">
+            {children}
+        </div>
+    </SeminarTemplate>; 

@@ -1,13 +1,31 @@
+import { SeminarTemplate } from '../../../templates/seminar';
+
 # Cook's Jung and Kierkegaard Syllabus
+
+## Presentations
+- Part 1
+    - Topic: Introduction to the persons of Kierkegaard and Jung
+    - Presenter: TBD
+- Part 2:
+    - Topic: The central shared ideas of Kierkegaard and Jung
+    - Presenter: TBD
+- Part 3:
+    - Topic: Jungian analysis of Kierkegaard
+    - Presenter: TBD
+- Part 4:
+    - Topic: In the shadow of Jung
+    - Presenter: TBD
+
+## Meeting location
 
 ## Schedule
 ### Week 1
 - Date: Monday, 27 February
-- Reading: Amy Cook, Introduction 
+- Reading: [Amy Cook, Introduction ](week1/cook_introduction)
 
 ### Week 2
 - Date: Monday, 06 March
-- Reading: Amy Cook, Chapter 1 "A holy kind of healing"
+- Reading: [Amy Cook, Chapter 1 "A holy kind of healing"](week2/cook_chapter1)
 
 ### Week 3
 - Date: Monday, 13 March
@@ -110,4 +128,9 @@
 - Date: Saturday, 09 September
 - My ultimate presentation
 
-export default ({ children }) => <div className=" w-full mx-auto my-6 prose">{children}</div>; 
+export default ({ children }) => 
+    <SeminarTemplate>
+        <div className=" w-full mx-auto prose">
+            {children}
+        </div>
+    </SeminarTemplate>; 
